@@ -19,6 +19,8 @@ class RunCommand implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
+    public $timeout = 1200;
+    
     /**
      * @var CommandDto
      */
